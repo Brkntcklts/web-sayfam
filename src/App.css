@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+  }
+
+  .App {
+    position: relative;
+    max-width: 100vw;
+    height: auto;
+    background: #f9f9f9;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .basic-info, .about-me {
+    background-color: #120b39;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .basic-info h3, .about-me h3 {
+    margin-bottom: 15px;
+  }
+
+  .basic-info p, .about-me p {
+    color: #ffd700;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .hero-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+  }
+}
